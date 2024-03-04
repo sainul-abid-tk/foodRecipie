@@ -1,0 +1,22 @@
+<nav class="navbar bg-black  ">
+    <div class="container-fluid">
+      <a class="navbar-brand  fs-4" routerLink="/">
+        <i class="fa-solid fa-hotdog fa-shake" style="color: #FFD43B;"></i>
+       <span class="text-white ms-2 fw-bolder fst-italic">Tasty</span>
+      </a>
+      <div class="d-flex">
+        <input  (input)="getSearchKey($event)" style="width: 347px;" type="text" class="form-control my-2 " placeholder="Search by cuisine/name">
+      </div>
+      <div >
+        <select style="width: 200px;" (change)="handleSelectionChange($event)" class="form-select form-select-sm bg-primary  text-white  border-0 py-1 fw-bolder fs-5" aria-label="Large select example">
+          <option class="bg-white pe-5 fw-bold text-dark " value="" selected>All</option>
+          <option class="bg-white pe-5 fw-bold text-dark " value="Breakfast">Breakfast</option>
+          <option class="bg-white pe-5 fw-bold text-dark " value="Lunch">Lunch</option>
+          <option class="bg-white pe-5 fw-bold text-dark " value="Dinner">Dinner</option>
+          <option class="bg-white pe-5 fw-bold text-dark " value="Snacks">Snacks</option>
+          <option class="bg-white pe-5 fw-bold text-dark " value="Side Dish">Side Dish</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
